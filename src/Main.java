@@ -23,7 +23,13 @@ public class Main {
             case '+' -> result = num1 + num2;
             case '-' -> result = num1 - num2;
             case '*' -> result = num1 * num2;
-            case '/' -> result = num1 / num2;
+            case '/' -> {
+                if (num2==0){
+                    System.out.println("error");
+                }
+                else
+                    result= num1 / num2;
+            }
             case '^' -> result = Math.pow (num1, num2);
         }
 
